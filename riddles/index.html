@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Doc</title>
+        <link rel="stylesheet" href="index.css" />
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&family=Roboto&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="guard">
+            <div id="input">
+                <label id="answer-label" for="answer">Your answer for puzzle 1</label>
+                <input id="answer" type="text" placeholder="Example: fine if you don't know" />
+            </div>
+        </div>
+
+        <div id="riddle">
+            <button id="close">Close</button>
+            <div id="wrapper">
+                <div id="title">Compression code</div>
+                <div id="riddle-body">
+                    <div>Code:</div>
+                    <div id="code">[AFDORHVI]</div>
+                    <div id="codebook">
+                        <div>CodeBook:</div>
+                        <div class="codeBookWord"><span class="word">[A]</span><span class="wordDef">: hello</span></div>
+                        <div class="codeBookWord"><span class="word">[Z]</span><span class="wordDef">: hello</span></div>
+                    </div>
+                    <!--  -->
+                    <div>Map:</div>
+                    <div id="tour">
+                        <div class="tour-element" style="top: 226px;">1</div>
+                        <div class="tour-element" style="top: 50px;left: 200px;">2</div>
+                        <div class="tour-element" style="top: 50px;left: 400px;">3</div>
+                        <div class="tour-element" style="top: 226px;right: 16px;">4</div>
+                        <div class="tour-element" style="bottom: 66px;left: 200px;">5</div>
+                        <div class="tour-element" style="bottom: 66px;left: 400px;">1</div>
+                        <div class="tour-element" style="top: 226px;left: 120px;">2</div>
+                        <div class="tour-element" style="top: 140px;left: 230px;">3</div>
+                        <div class="tour-element" style="top: 140px;left: 370px;">4</div>
+                        <div class="tour-element" style="bottom: 150px;left: 230px;">5</div>
+                        <div class="tour-element" style="bottom: 150px;left: 370px;">4</div>
+                        <div class="tour-element" style="top: 226px;right: 120px;">5</div>
+                        <div class="tour-line" style="top: 250px;transform: rotate(-45deg);width: 247px;"></div>
+                        <div class="tour-line" style="top: 62px;left: 200px;width: 200px;"></div>
+                        <div class="tour-line" style="top: 62px;left: 426px;width: 262px;transform: rotate(40deg);"></div>
+                        <div class="tour-line" style="top: 235px;left: 30px;width: 262px;transform: rotate(43deg);"></div>
+                        <div class="tour-line" style="top: 404px;left: 190px;width: 262px;transform: rotate(0);"></div>
+                        <div class="tour-line" style="top: 231px;left: 633px;width: 262px;transform: rotate(140deg);"></div>
+                        <div class="tour-line" style="top: 139px;left: 269px;"></div>
+                        <div class="tour-line" style="top: 310px;left: 270px;"></div>
+                        <div class="tour-line" style="top: 223px;left: 138px;transform: rotate(38deg);"></div>
+                        <div class="tour-line" style="top: 215px;left: 138px;transform: rotate(-39deg);"></div>
+                        <div class="tour-line" style="top: 214px;left: 529px;transform: rotate(143deg);width: 140px;"></div>
+                        <div class="tour-line" style="top: 214px;left: 529px;transform: rotate(-146deg);width: 140px;"></div>
+                        <div class="tour-line" style="top: 35px;left: 223px;transform: rotate(75deg);"></div>
+                        <div class="tour-line" style="top: 205px;"></div>
+                        <div class="tour-line" style="top: 205px;left: 500px;"></div>
+                        <div class="tour-line" style="top: 291px;left: 395px;transform: rotate(74deg);"></div>
+                    </div>
+
+                    <!--  -->
+                    <div>Syllogisms:</div>
+                    <div id="syllogisms">
+                        <div class="syllogism">
+                            <div class="statment">All gems are expensive</div>
+                            <ol>
+                                <li>A</li>
+                                <li>B</li>
+                                <li>C</li>
+                                <li>D</li>
+                                <li>E</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!--  -->
+                    <div>Cypher grid</div>
+                    <div id="grid">
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element black"></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                        <div class="element"><input type="text" maxlength="1" value="e" /><span>11</span></div>
+                    </div>
+
+                    <!--  -->
+                    <div>Knight move</div>
+                    <div id="land">
+                        <div class="row"><div class="element">1</div><div class="element">1</div></div>
+                        <div class="row"><div class="element">1</div><div class="element">1</div><div class="element">1</div><div class="element">1</div></div>
+                        <div class="row"><div class="element">1</div><div class="element">1</div><div class="element">1</div><div class="element">1</div></div>
+                        <div class="row"><div class="element">1</div><div class="element">1</div></div>
+                    </div>
+                </div>
+                <div id="riddle-answer">
+                    <!-- <label for="riddle-answer" id="riddle-answer-label">You can use this input to translate the code<br><div id="note">Remember the answer because you will need it later</div></label> -->
+                    <textarea name="riddle-answer" id="answer-input" rows="5" placeholder="You can use this input to translate the code. Remember the answer because you will need it later"></textarea>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="crypto-js.min.js" ></script>
+        <script src="index.js" ></script>
+    </body>
+</html>

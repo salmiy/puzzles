@@ -12,6 +12,10 @@
     src: url(nier.ttf);
 }
 @font-face {
+    font-family: Raleway;
+    src: url(Raleway0.ttf);
+}
+@font-face {
     font-family: Angelic;
     src: url(angelic.ttf);
 }
@@ -30,7 +34,43 @@ input {
     color: black !important;
     user-select: text !important;
 }
-
+#err, #pass {
+    
+    color: silver;
+    height: 400px;
+    width: 1000px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Raleway;
+    font-size: 64px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#err {
+    background-color: red;
+}
+#pass {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 91);
+    /* display: flex; */
+    flex-direction: column;
+    z-index: 23424;
+}
+#pass div, #pass b {
+    width: 1000px;
+    background-color: green;
+}
+#pass div {
+    padding-top: 128px;
+}
+#pass b {
+    padding-bottom: 128px;
+}
 
 #guard , #riddle{
     display: flex;
@@ -88,7 +128,7 @@ input {
 
 #wrapper {
     min-width: 700px;
-    padding: 32px;
+    padding: 32px 32px 128px 32px;
 }
 
 #title, #riddle-body, #riddle-answer {
@@ -101,7 +141,12 @@ input {
 #riddle-answer {
     display: flex;
     flex-direction: column;
-    
+    position: fixed;
+    bottom: 0;
+    width: 700px;
+    background-color: #00005b;
+    margin: 0;
+    padding: 32px 0;
 }
 
 #answer-input {
@@ -162,9 +207,18 @@ input {
 #codebook {
     margin-top: 8px;
 }
+.codeBookWord {
+    margin-bottom: -20px;
+}
 .word {
     font-family: Robotalk;
     font-size: 48px;
+}
+.raleway
+{
+    display: inline;
+    font-family: Robotalk;
+    font-size: 56px;
 }
 
 /*  TOUR GUID */

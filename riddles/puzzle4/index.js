@@ -70,7 +70,7 @@ const showRiddle = () => {
             if (pass.startsWith('Y'))
                 givePassPhrase(pass);
             else 
-                givePassPhrase("pass phrase 3031")
+                givePassPhrase("Loser")
         }
     }
 

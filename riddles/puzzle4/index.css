@@ -127,6 +127,7 @@ input {
 
 #wrapper {
     min-width: 700px;
+    max-width: 1000px;
     padding: 32px 32px 128px 32px;
 }
 
@@ -144,8 +145,8 @@ input {
     bottom: 0;
     width: 700px;
     background-color: #00005b;
-    margin: 0;
     padding: 32px 0;
+    margin: 0;
 }
 
 #answer-input {
@@ -160,8 +161,8 @@ input {
 /*  Grid    */
 #grid {
     display: grid;
-    grid-template-columns: repeat(5, 64px);
-    grid-template-rows: repeat(5, 64px);
+    grid-template-columns: repeat(15, 64px);
+    grid-template-rows: repeat(15, 64px);
     background: white;
     padding: 16px;
     justify-content: center;
@@ -175,6 +176,8 @@ input {
     font-size: 24px;
     border: 2px solid black;
     margin: -1px;
+    width: 64px;
+    height: 64px;
 }
 .element input {
     background-color: inherit;
@@ -190,12 +193,25 @@ input {
     right: 4px;
     font-family: Raleway;
     font-size: 16px;
+    color: black
 }
 #grid .element.black {
     background-color: black;
     cursor: not-allowed;
 }
-
+#cypher-answer-label {
+    margin-top: 50px;
+}
+#cypher-answer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.group {
+    display: flex;
+    margin: 16px;
+}
 
 /*  COMPRESSION CODE  */
 #code {
